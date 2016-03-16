@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    //数据属性
+    var person={};
+    Object.defineProperty(person,"name",{
+        configurable:false,
+        value:"lven",
+    });
+
+    Object.defineProperty(person,"name",{   //可以配置
+        writable:true,
+    });
+
+
+    Object.defineProperty(person,"name",{   //抛出错误
+        writable:true,
+        value:"feng",
+    });
+
+    console.info(person.name);
+
+    Object.defineProperty(person,"name",{   //抛出错误
+        configurable:true,
+        value:"feng",
+    });
+
+
+
+
+
+</script>
+
+
+<body>
+
+</body>
+</html>
