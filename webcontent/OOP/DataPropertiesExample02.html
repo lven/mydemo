@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    //属性类型
+    var person={};
+    Object.defineProperty(person,"name",{
+        configurable:false,
+        value:"lven",
+    });
+
+    console.info(person.name);  //lven
+    delete person.name;
+    console.info(person.name);  //lven  writable的值为false,赋值不改变变量的值.
+
+
+
+</script>
+
+
+<body>
+
+</body>
+</html>

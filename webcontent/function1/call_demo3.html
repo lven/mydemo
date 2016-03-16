@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script language="javascript">
+
+        function Animal(name){
+            this.name = name;
+            this.showName = function(){
+
+                alert("name is "+this.name);
+            }
+        }
+
+
+        function Cat(name){
+           //Animal.call(this, name); //如果没有这句话,构造函数并不会赋值,但会继承name属性和方法.
+        }
+
+
+        Cat.prototype = new Animal();
+
+        var cat = new Cat("Black Cat");
+
+        cat.showName();
+
+        alert(cat instanceof Animal);
+
+
+    </script>
+</body>
+</html>

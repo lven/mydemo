@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    //通过创建Objec实例,然后给他添加属性和方法.
+    var person = new Object();
+    person.name = "zhulingfeng";
+    person.age = 25;
+
+    person.sayName = function () {  //一个函数表达式定义法
+        alert(this.name);
+    }
+
+    person.sayName();  // 显示zhulingfeng
+   // person.sayName;   //    不显示
+
+
+</script>
+
+<!--
+    <script>
+        //字面量表示法,json表现形式
+        var person={
+            name:"zhulingfeng",
+            age:25,
+            sayName:function (){    //是以键值对的形式存储数据,所以存储的是function的字面量形式,而不是它的返回值.
+                alert(this.name);
+            }
+        }
+        //person.sayName();  // 显示zhulingfeng
+        person.sayName;   //    不显示
+    </script>
+-->
+
+<body>
+
+</body>
+</html>

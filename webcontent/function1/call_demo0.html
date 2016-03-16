@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    //对改方法进行了包装.
+    function reWrite(o,m){
+        var original=o[m];
+        o[m]=function(){
+                console.log(new Date(),"entering:",m);
+                var result =original.apply(this,arguments);
+                console.log(new Date(),"entering:",m);
+                console.info(result);
+                return result;
+        }
+    }
+/*    function reWrite(o,m){
+
+        o[m]=function(){
+            var result=function () {
+                alert("this is new function");
+                var fn2 =(function(){
+                    alert("this inner function");
+                })();
+                return fn2;
+            };
+            return result;
+        }
+    }*/
+
+    var o={
+        m: function () {
+            alert("this is m`s original function()");
+        }
+    }
+
+
+
+    function fn1(){
+        alert("hehe");
+    }
+
+    //start
+    reWrite(o,"m");
+    o.m();
+</script>
+<body>
+
+</body>
+</html>
