@@ -1,0 +1,198 @@
+.btn-set{
+    height: 45px;
+    width: 100px;
+}
+
+
+.right-content {
+    background-color: #fff;
+    min-height: 950px;
+    border-radius: 4px;
+    margin-bottom: -50px;
+}
+.approve-box {
+    margin-top: 110px;
+}
+.approve-item {
+    border-top: 1px solid #ccc;
+    padding: 24px 70px ;
+}
+
+.approve-item:last-child {
+    border-bottom: 1px solid #ccc;
+}
+.approve-item-m dl {
+
+}
+.approve-item-m dt {
+    font-size: 18px;
+    color: #7b7b7b;
+}
+.approve-item-m dd {
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: 0;
+    color: #bbb;
+}
+
+.approve-item-r.span4 {
+    text-align: center;
+    position: relative;
+  /*  width: 205px;*/
+    height: 70px;
+}
+.approve-item-r >.container {
+
+}
+#RiskCenter {
+    position: absolute;
+    left: 50%;
+    width: 800px!important;
+    margin-left: -400px;
+    top: 160px;
+}
+#m_IdAuthentication{
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    margin-left: -350px;
+    top: 160px;
+
+}
+
+/*#m_qualificationInspecting {
+    position: absolute;
+    width: 951px!important;
+    left: 50%;
+    margin-left: -461px;
+    top: 160px;
+}*/
+#m_qualificationInspecting {
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    margin-left: -350px;
+    top: 160px;
+}
+
+#m_confirmQualifiedInvestors {
+    position: absolute;
+    width: 700px;
+    height: 605px;
+    left: 50%;
+    margin-left: -350px;
+    top: 160px;
+}
+.body-Authentication{
+    padding: 30px 45px!important;
+}
+.box-tip {
+    font-size: 14px;
+    color: #bbb;
+}
+/*#m_qualificationInspecting ul {
+    margin: 20px 0px;
+}
+#m_qualificationInspecting li {
+    margin-right: 32px;
+}*/
+li.item-card {
+    width: 220px;
+    float: left;
+    margin-right: 32px;
+    margin-top: 10px;
+}
+.item-add {
+    position: relative;
+    width: 222px;
+    height: 150px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+
+}
+.box-pic .item-tip {
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+}
+.dotted-box{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: 4px dashed #ccc;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+.dotted-box .l1{
+    position: absolute;
+    top: 35px;
+    width: 75px;
+    height: 10px;
+    background-color: #c7c3c2;
+    border-radius: 4px;
+}.dotted-box .l2{
+    position: absolute;
+    left: 35px;
+    width: 10px;
+    height: 75px;
+    background-color: #c7c3c2;
+    border-radius: 4px;
+}
+
+.ans {
+    float: left;
+    margin-left: 0px;
+    width: 90%;
+}
+.item-add  img.choose-image{
+    width:220px;
+    height: 150px;
+}
+
+.item-add  img{
+    width:220px;
+    height: 150px;
+}
+
+.item-add img.clear-image {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+}
+
+/*
+Ç©Ãû*/
+.box-sign p {
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 24px;
+}
+.area-sign {
+    padding: 0px 10px;
+    border: 1px solid #595959;
+    border-radius: 5px;
+}
+.invest_sign {
+    text-align: right;
+}
+.box-sign {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#signature {
+    border: 1px solid #595959;
+
+}
+.modal-body {
+    position: relative;
+    max-height: 800px;
+    padding: 15px;
+    overflow-y: auto;
+}

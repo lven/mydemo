@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script src="../jquery/jquery-1.11.1.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="libs/flashcanvas.js"></script>
+<![endif]-->
+<script src="libs/jSignature.min.js"></script>
+<style>
+    #signature {
+        /* height: 200px; */
+        border: 1px solid #ccc;
+    }
+</style>
+<body>
+<div id="signature"></div>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $("#signature").jSignature()
+    })
+</script>
+
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.sayName = function () {        //在new 对象的过程中,创建了两个不同作用域链的函数
+            alert(this.name);   //改函数的上下文为obj
+        }
+
+      /*  this.sayName = new function () {        //在逻辑上与上文等价
+            alert(this.name);
+        }*/
+    }
+
+
+    /*
+     * 调用构造函数精力四个步骤
+     * 1.创建了一个新的对象
+     * 2.this指向了新创建的对象 (把构造函数的作用域赋给新对象)
+     * 3.执行构造函数中的代码  只有这一不是多的
+     * 4.返回新对象
+     * */
+    //当构造函数调用
+   // var person = new Person("lven", "25", "web font develob");
+    //person.sayName();
+    // console.info(person.constructor == Person);   //true
+    //console.info(person instanceof  Object);   //true
+    //console.info(person instanceof  Person);   //true 既是Objct的实例,也是Person的实例
+
+
+    //当普通函数调用
+   // Person("lingfeng", "26", "web  develob");
+   // window.sayName();
+
+    //给其他对象调用
+    var o=new Object();
+    o.name="mike"
+    Person.call(o,"Hepburn","30","dance");
+    o.sayName();
+
+
+    var person1 = new Person("lven", "25", "web font develob");
+    var person2 = new Person("lingfeng", "27", "web font develob");
+    alert(person1.sayName==person2.sayName) /   false
+
+</script>
+
+
+<body>
+
+</body>
+</html>

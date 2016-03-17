@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    //数据属性  设置一个属性的值,导致其他属性的值保持变化
+    var book = {
+    };
+
+    Object.defineProperties(book, {
+                _year: {
+                    value: 2004
+                },
+                edition: {
+                    value:1
+                },
+                year:{
+                    get :function(){
+                        return this._year;
+                    },
+                    set: function(newValue){
+                        if(newValue>2004){
+
+                            this.edition+=newValue-this._year;
+                            this._year=newValue;
+                        }
+                    }
+                }
+            }
+    )
+    ;
+
+    book.year = 2008;
+    console.info(book.edition);
+
+</script>
+
+
+<body>
+
+</body>
+</html>

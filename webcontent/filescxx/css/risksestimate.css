@@ -1,0 +1,103 @@
+@CHARSET "UTF-8";
+
+.r-title{
+	text-align:center;
+}
+
+.title-num{
+	font-size:13px;
+	padding-top:4px;
+	text-align:right;
+}
+
+.title-text{
+	margin-left:0px!important;
+}
+
+.question{
+	color:#494949;
+	font-weight:900;
+}
+
+.List-son{
+	color:#494949;
+	font-weight:normal;
+}
+
+.t-answer{
+	line-height:20px;
+}
+
+#RiskCenter .boox,
+.boox
+{
+	margin-top:3px;
+	float:left;
+	border:1px solid gray;
+	width:11px;
+	height:11px;
+}
+
+.letter{
+	float:left;	
+	margin-left:15px;
+}
+
+.ans{
+	float:left;
+	margin-left:0px;
+	width:80%;
+}
+.List-son{
+	display:inline;
+	margin-left:0px;
+}
+
+.Line-question{
+	display:inline;
+	font-size:14px;
+	line-height:40px;
+	
+}
+
+.line{
+	margin: 20px auto;
+	width:80%;
+	border:1px solid gray;
+}
+
+#bottom{
+	margin-top:80px;
+}
+
+.b-sub{
+	width:150px;
+	
+}
+
+
+/*风险评估结果的css*/
+.image-result{
+	width:100px;
+	height:100px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius:100%;
+	text-align:center;
+	line-height:100px;
+	font-size:30px;
+}
+
+.risk-title{
+	margin-top:25px;
+} 
+ 
+.r-name{
+	padding-left:27px;
+}
+ 
+.risk-type{
+	padding-left:0px;
+}
+ 
+ 

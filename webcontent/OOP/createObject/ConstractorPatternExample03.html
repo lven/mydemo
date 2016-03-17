@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.sayName =sayName;      //定义了一个全局变量,
+    }
+
+    function sayName(){
+        alert(this.name);
+    }
+    var person1 = new Person("lven", "25", "web font develob");
+    var person2 = new Person("lingfeng", "26", "java");
+    person1.sayName();
+    person2.sayName();
+
+    alert(person1.sayName==person2.sayName) //  true,调用的是同一个function
+</script>
+
+
+<body>
+
+</body>
+</html>

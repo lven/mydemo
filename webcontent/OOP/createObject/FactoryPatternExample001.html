@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script>
+    //通过函数来封装特等接口实现细节  工厂模式,抽象了具体创建对象的过程
+    function createObject(name,age,job) {
+        var obj =new Object();
+        obj.name=name;
+        obj.age=age;
+        obj.job=job;
+        obj.sayName=function(){
+            alert(this.name);   //改函数的上下文为obj
+        }
+        return  obj;
+    }
+        var person=createObject("lven","25","web font develob");
+        person.sayName();
+</script>
+
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>投资认证</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../filescxx/css/common.css" rel="stylesheet">
+
+    <link href="../filescxx/css/risksestimate.css" rel="stylesheet">
+    <link href="../filescxx/css/investApprove.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="top"></div>
+
+<div class="page-location">
+    <div class="subfont-color">当前位置：
+		<span class="" >
+            <a class="" href="javascript:void(0)" onclick="GetBack('myaccount',2,1)">我的账户</a>
+            >
+            <a class="" href="javascript:void(0)" onclick="GetBack('myaccount',2,2)">投资认证</a>
+		</span>
+    </div>
+</div>
+
+
+
+<div class="pagerole">
+    <div class="container-fluid ">
+        <div class="row-fluid">
+            <div class="span2">
+                <div id="left"></div>
+            </div><!--/span-->
+            <div class="span10">
+                <div class="container-fluid right-content">
+                    <div class="approve-box container-fluid">
+                        <div class="approve-item row">
+                            <div class="approve-item-l span3">
+                                <img src="../icons/certification.png" alt="实名认证">
+                            </div>
+                            <div class="approve-item-m span5 ">
+                                <dl>
+                                    <dt>实名认证</dt>
+                                    <dd>实名认证可有效提升安全等级</dd>
+                                </dl>
+
+                            </div>
+                            <div class="approve-item-r span4 ">
+                                <button class="btn themes-color  btn-set abs-mid " id="IdAuthentication"  type="button" >认证</button>
+                            </div>
+                        </div>
+                        <div class="approve-item row">
+                            <div class="approve-item-l span3">
+                                <img src="../icons/riskAssessment.png" alt="风险评估">
+                            </div>
+                            <div class="approve-item-m span5 ">
+                                <dl>
+                                    <dt>风险评估</dt>
+                                    <dd>风险认证可有效提升账户安全等级</dd>
+                                </dl>
+                            </div>
+                            <div class="approve-item-r span4 ">
+                                <button class="btn themes-color  btn-set abs-mid" id="riskAssessment" type="button" >认证</button>
+                            </div>
+                        </div>
+                        <div class="approve-item row">
+                            <div class="approve-item-l span3">
+                                <img src="../icons/qualitycertification.png" alt="资质认证">
+                            </div>
+                            <div class="approve-item-m span5 ">
+                                <dl>
+                                    <dt>资质认证</dt>
+                                    <dd>资质认证可有效提升账户安全等级</dd>
+                                </dl>
+                            </div>
+                            <div class="approve-item-r span4 ">
+                                <button class="btn themes-color  btn-set abs-mid " id="qualificationInspecting" type="button">认证</button>
+                            </div>
+                        </div>
+
+                        <div class="approve-item row">
+                            <div class="approve-item-l span3">
+                                <img src="../icons/confirmQualifiedinvestors.png" alt="资质认证">
+                            </div>
+                            <div class="approve-item-m span5 ">
+                                <dl>
+                                    <dt>合格投资者确认</dt>
+                                    <dd>确认您是合格投资者并签名</dd>
+                                </dl>
+                            </div>
+                            <div class="approve-item-r span4 ">
+                                <button class="btn themes-color  btn-set abs-mid " id="confirmQualifiedInvestors" type="button">认证</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div><!--span10--->
+    </div>	<!--container-fluid--end-->
+</div>
+
+<div id="bottom"></div>
+
+<div id="m_confirmQualifiedInvestors" class="modal hide fade in  scxx-model scxx-modal-main">
+    <div class="modal-header themes-color">
+        <a class="close" data-dismiss="modal">×</a>
+        <div id="head-title">
+            合格投资者确认
+        </div>
+    </div>
+    <div class="modal-body container-fluid ">
+        <div class="box-sign">
+            <p>本人承诺本人是符合《私募投资基金监督管理暂行办法》所述的私募基金合格投资者，本人具备相应风险识别能力和风险承担能力，用于投资单只私募基金的金额不低于100 万元，且净资产、金融资产或最近三年个人年均收入符合《私募投资基金监督管理暂行办法》第十二条所述之条件。</p>
+
+            <p>本人承诺本人在此微信/网页上提供的关于合格投资者的所有信息和资料是合法、有效及真实、准确、完整的，如因本人提供的虚假信息产生的法律后果将由本人自己承担。</p>
+            <div class="invest_sign">
+                签名:<span>王小二</span>
+            </div>
+        </div>
+        <div id="signature"></div>
+    </div>
+
+    <div class="modal-footer scxx-modal-foot-mid">
+        <button class="btn-index btn btn-modal sub-action-color"  type="button" id="risk-account" >
+            取消
+        </button>
+        <button class="btn btn-modal themes-color" type="button" id="IdAuth_save" >
+            保存
+        </button>
+    </div>
+</div>
+<div id="modal_riskAssessment"></div>
+<div id="modal_resultRist"></div>
+<div id="modal_IdAuthentication"></div>
+<div id="modal_qualificationInspecting"></div>
+<!--<div id="modal_confirmQualifiedInvestors"></div>-->
+
+
+
+</body>
+
+<script src="../jquery/jquery-1.11.1.min.js"></script>
+<script src="../jquery/jquery.cookie.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="libs/flashcanvas.js"></script>
+<![endif]-->
+<script src="libs/jSignature.min.js"></script>
+
+<script src="../filescxx/js/public.js"></script>
+<script src="../filescxx/js/investapprove.js"></script>
+<script src="../filescxx/js/risksestimate.js"></script>
+
+
+
+</html>
